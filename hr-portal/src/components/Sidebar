@@ -1,0 +1,80 @@
+import react from 'react';
+import sidebar from './sidebar.js'; 
+
+const sidebar = () => {
+  return (
+    <div className="sidebar w-64 h-screen bg-gray-800 text-white flex flex-col justify-between">
+      <div className="logo p-4 flex items-center justify-center">
+        <img src="/logo.png" alt="Career Coaches Logo" className="h-12" />
+      </div>
+      <ul className="menu flex-grow">
+        <li className="p-4 hover:bg-gray-700">
+          <a href="#" className="flex items-center">
+            <i className="fas fa-tachometer-alt mr-3"></i>
+            Dashboard
+          </a>
+        </li>
+        <li className="p-4 hover:bg-gray-700">
+          <a href="#" className="flex items-center">
+            <i className="fas fa-clipboard-list mr-3"></i>
+            Checklist
+          </a>
+        </li>
+        <li className="p-4 hover:bg-gray-700">
+          <a href="#" className="flex items-center">
+            <i className="far fa-clock mr-3"></i>
+            Time off
+          </a>
+        </li>
+        <li className="p-4 hover:bg-gray-700">
+          <a href="#" className="flex items-center">
+            <i className="fas fa-user-check mr-3"></i>
+            Attendance
+          </a>
+        </li>
+        <li className="p-4 hover:bg-gray-700">
+          <a href="#" className="flex items-center">
+            <i className="fas fa-money-bill-wave mr-3"></i>
+            Payroll
+          </a>
+        </li>
+        <li className="p-4 hover:bg-gray-700">
+          <a href="#" className="flex items-center">
+            <i className="fas fa-chart-bar mr-3"></i>
+            Performance
+          </a>
+        </li>
+        <li className="p-4 hover:bg-gray-700">
+          <a href="#" className="flex items-center">
+            <i className="fas fa-tasks mr-3"></i>
+            Requirement
+          </a>
+        </li>
+      </ul>
+      <div className="footer p-4">
+        <ul>
+          <li className="p-4 hover:bg-gray-700">
+            <a href="#" className="flex items-center">
+              <i className="fas fa-question-circle mr-3"></i>
+              Help Center
+            </a>
+          </li>
+          <li className="p-4 hover:bg-gray-700">
+            <a href="#" className="flex items-center">
+              <i className="fas fa-cog mr-3"></i>
+              Setting
+            </a>
+          </li>
+          <li className="p-4 hover:bg-gray-700">
+            <a href="#" className="flex items-center">
+              <i className="fas fa-sign-out-alt mr-3"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default sidebar;
